@@ -24,7 +24,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Controller
-//@RequestMapping("/admin")
+@RequestMapping("/admin")
 public class AdminProduct {
 
     private Path path;
@@ -32,7 +32,7 @@ public class AdminProduct {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("/admin/product/addProduct")
+    @RequestMapping("/product/addProduct")
     public String addProduct(Model model){
         Product product = new Product();
         product.setProductCategory("android");
@@ -44,7 +44,7 @@ public class AdminProduct {
         return "addProduct";
     }
 
-    @RequestMapping(value="/admin/product/addProduct", method = RequestMethod.POST)
+    @RequestMapping(value="/product/addProduct", method = RequestMethod.POST)
     public String addProductPost(@Valid @ModelAttribute("product") Product product, BindingResult result, HttpServletRequest request){
 
         if(result.hasErrors()){
@@ -69,7 +69,7 @@ public class AdminProduct {
         return "redirect:/admin/productInventory";
     }
 
-    @RequestMapping("/admin/product/editProduct/{id}")
+    @RequestMapping("/product/editProduct/{id}")
     public String editProduct(@PathVariable("id") int id,  Model model){
         Product product = productService.getProductById(id);
 

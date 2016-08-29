@@ -12,11 +12,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Product Inventory Page</h1>
-
-
-            <p class="lead">This is the product inventory page:</p>
-            <a href="<spring:url value="/admin/product/addProduct" />" class="btn btn-primary">Add Product</a>
+            <h1>Product List Page</h1>
+            <p class="lead">Checkout all the awesome products available now!</p>
+            
 <br>
 <br>
         <table id="myTable" class="table table-striped table-hover">
@@ -37,11 +35,11 @@
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} USD </td>
-                    <td>
-                        <a href="<spring:url value="/viewProduct/${product.productId}" />"><span class="glyphicon glyphicon-info-sign"></span></a>
-                        <a href="<spring:url value="/admin/product/deleteProduct/${product.productId}" />"><span class="glyphicon glyphicon-remove"></span></a>
-                        <a href="<spring:url value="/admin/product/editProduct/${product.productId}" />"><span class="glyphicon glyphicon-pencil"></span></a>
-                    </td>
+                    <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"  
+					class="btn btn-primary"> <span
+					class="glyphicon-info-sign glyphicon"> </span> Details
+					</a>
+				</td>
                 </tr>
             </c:forEach>
         </table>

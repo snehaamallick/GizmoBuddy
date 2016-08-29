@@ -51,6 +51,8 @@
         <property name="flowExecutor" ref="flowExecutor" />
     </bean>
     <mvc:default-servlet-handler/>
+    
+    <bean id="customAuthenticationSuccessHandler" class="com.myorg.gizmobuddy.handler.CustomAuthenticationSuccessHandler" />
   <!-- ======== Java mail Services API ======= -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<property name="host" value="smtp.gmail.com" />

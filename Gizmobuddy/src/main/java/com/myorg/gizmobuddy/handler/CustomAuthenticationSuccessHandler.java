@@ -42,7 +42,7 @@ Set<String> authorities = AuthorityUtils.authorityListToSet(authentication.getAu
 if (authorities.contains("ROLE_ADMIN")) {
 	return "/admin";
 } else if (authorities.contains("ROLE_USER")) {
-	return "/viewProduct/{productId}";
+	return "/product/productList";
 } else {
     throw new IllegalStateException();
 }
