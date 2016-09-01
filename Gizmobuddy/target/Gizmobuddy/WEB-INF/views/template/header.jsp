@@ -11,7 +11,7 @@
     <link rel="icon" href="../../favicon.ico">
 
     <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<title>Welcome to Xperience</title>
+<title>Welcome to Gizmobuddy</title>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
@@ -33,35 +33,73 @@
     <script src="resources/js/jquery.isotope.min.js"></script>
     <script src="resources/js/main.js"></script>
     <script src="resources/js/wow.min.js"></script>
+    <style>
+body {
+	background-color: Bisque;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: -1px;
+}
+.border-left {
+    border-left: 1px solid #ddd;
+}
+
+
+ul#menu li {
+    display:inline;
+}
+
+</style>
 
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body  >
-<div class="navbar-wrapper">
-    <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Xperience</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<c:url value="/" />">Home</a></li>
-                        <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
-                        <li><a href="<c:url value="/about" />">About Us</a></li>
-                    </ul>
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+				<a class="navbar-brand" href="gotoindex"><img src="/Gizmobuddy/resources/images/logo8.PNG"></img> </a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="gotoindex"><b>Home</b>
+				</a></li>
+
+
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <b>Mobile Phones</b> <span
+						class="caret"> </span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="<c:url value="/product/productList?productName=Android" />">Android phone</a></li>
+
+					</ul></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="https://www.google.co.in/"><b>Smart
+							Devices</b> <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="<c:url value="/product/productList?productName=Smart Band" />">Smart Band</a></li>
+						<li><a href="<c:url value="/product/productList?productName=Smart Watches" />">Smart Watches</a></li>
+
+					</ul></li>
+
+			</ul>
                     <ul class="nav navbar-nav pull-right">
                         <c:if test="${pageContext.request.userPrincipal.name != null}">
                             <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-                            <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+                            <li><a href="<c:url value="/logout" />">Logout</a></li>
 
                             <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
                                 <li><a href="<c:url value="/customer/cart" />">Cart</a></li>

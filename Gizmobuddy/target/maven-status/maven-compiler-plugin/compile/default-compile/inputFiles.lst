@@ -20,10 +20,12 @@ D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\controller\CartContr
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\dao\impl\CustomerOrderDaoImpl.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\controller\admin\AdminHome.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\dao\impl\ProductDaoImpl.java
+D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\handler\CustomAuthenticationSuccessHandler.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\dao\CustomerOrderDao.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\controller\CartResources.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\service\impl\ProductServiceImpl.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\controller\admin\AdminProduct.java
+D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\controller\SendEmailController.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\dao\impl\CustomerDaoImpl.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\model\BillingAddress.java
 D:\workspace3\Gizmobuddy\src\main\java\com\myorg\gizmobuddy\service\CartItemService.java

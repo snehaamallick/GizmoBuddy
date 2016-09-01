@@ -21,12 +21,9 @@
 
             <div class="form-group">
                 <label for="category">Category</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="games" />Games</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="consoles" />Consoles</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="accessories" />Accessories</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="top seller" />Top Sellers</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="pre-order" />Pre-Order</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="new releases" />New Releases</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="android" />Android</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="smartband" />Smart band</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="smartwatches" />Smart Watches</label>
             </div>
 
             <div class="form-group">

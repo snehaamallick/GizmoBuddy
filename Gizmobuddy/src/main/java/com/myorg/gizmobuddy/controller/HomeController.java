@@ -6,6 +6,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
@@ -29,6 +31,8 @@ import com.myorg.gizmobuddy.service.ProductService;
 
 @Controller
 public class HomeController {
+	
+	Logger log = LoggerFactory.getLogger(HomeController.class);
 	
 	 @Autowired
 	    private CartItemService cartItemService;

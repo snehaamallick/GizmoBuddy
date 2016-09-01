@@ -1,6 +1,8 @@
 package com.myorg.gizmobuddy.controller;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +17,8 @@ import com.myorg.gizmobuddy.service.CustomerOrderService;
 
 @Controller
 public class OrderController {
+	
+	Logger log = LoggerFactory.getLogger(OrderController.class);
 
     @Autowired
     private CartService cartService;

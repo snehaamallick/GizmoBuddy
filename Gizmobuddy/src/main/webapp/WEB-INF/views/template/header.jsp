@@ -70,7 +70,7 @@ ul#menu li {
         <span class="icon-bar"></span>
       </button>
       
-				<a class="navbar-brand" href="gotoindex"><img src="resources/images/logo8.PNG"></img> </a>
+				<a class="navbar-brand" href="gotoindex"><img src="/Gizmobuddy/resources/images/logo8.PNG"></img> </a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">

@@ -2,6 +2,8 @@ package com.myorg.gizmobuddy.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 @Controller
 @RequestMapping("/product/viewProduct/sendEmail")
 public class SendEmailController {
+	
+	Logger log = LoggerFactory.getLogger(SendEmailController.class);
 	@Autowired
     private JavaMailSender mailSender;
      

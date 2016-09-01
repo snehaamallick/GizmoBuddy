@@ -25,7 +25,7 @@
             <label for="email">Email</label>
             <span style="color: #ff0000">${emailMsg}</span>
             <form:errors path="customerEmail" cssStyle="color: #ff0000" />
-            <form:input path="customerEmail" id="email" class="form-Control" />
+            <form:input type="email" path="customerEmail" id="email" class="form-Control" />
         </div>
 
         <div class="form-group">

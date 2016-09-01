@@ -3,11 +3,11 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
-    <var name="order" class="com.mywebsite.xperiencegaming.model.CustomerOrder" />
+    <var name="order" class="com.myorg.gizmobuddy.model.CustomerOrder" />
     
     <action-state id="addCartToOrder">
         <evaluate expression="cartDaoImpl.validate(requestParameters.cartId)" result="order.cart" />
-        <transition to="InvalidCartWarning"  on-exception="java.io.IOException" />
+        <transition to="invalidCartWarning"  on-exception="java.io.IOException" />
         <transition to="collectCustomerInfo" />
     </action-state>
 

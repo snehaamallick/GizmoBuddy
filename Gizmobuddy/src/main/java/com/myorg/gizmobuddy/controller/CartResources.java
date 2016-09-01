@@ -1,6 +1,8 @@
 package com.myorg.gizmobuddy.controller;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.User;
@@ -22,6 +24,8 @@ import java.util.List;
 @Controller
 @RequestMapping("/rest/cart")
 public class CartResources {
+	
+	Logger log = LoggerFactory.getLogger(CartResources.class);
 
     @Autowired
     private CartService cartService;

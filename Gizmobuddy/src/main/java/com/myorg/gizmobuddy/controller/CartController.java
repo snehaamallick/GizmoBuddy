@@ -1,6 +1,8 @@
 package com.myorg.gizmobuddy.controller;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
@@ -16,6 +18,7 @@ import com.myorg.gizmobuddy.service.CustomerService;
 @Controller
 @RequestMapping("/customer/cart")
 public class CartController {
+	Logger log = LoggerFactory.getLogger(CartController.class);
 
     @Autowired
     private CustomerService customerService;

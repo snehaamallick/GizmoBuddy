@@ -33,5 +33,7 @@ com\myorg\gizmobuddy\model\CartItem.class
 com\myorg\gizmobuddy\controller\admin\AdminHome.class
 com\myorg\gizmobuddy\service\impl\CartItemServiceImpl.class
 com\myorg\gizmobuddy\service\CartItemService.class
+com\myorg\gizmobuddy\controller\SendEmailController.class
 com\myorg\gizmobuddy\dao\CustomerDao.class
+com\myorg\gizmobuddy\handler\CustomAuthenticationSuccessHandler.class
 com\myorg\gizmobuddy\service\CustomerOrderService.class
