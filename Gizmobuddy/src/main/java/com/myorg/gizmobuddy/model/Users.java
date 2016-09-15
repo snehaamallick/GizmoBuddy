@@ -13,15 +13,7 @@ public class Users {
     private String password;
     private Boolean enabled;
     private int customerId;
-    private String role;
-
-    public String getRole() {
-		return role;
-	}
-
-	public void setRole(String role) {
-		this.role = role;
-	}
+    
 
 	public int getUsersId() {
         return usersId;

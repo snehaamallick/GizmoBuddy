@@ -70,11 +70,11 @@ ul#menu li {
         <span class="icon-bar"></span>
       </button>
       
-				<a class="navbar-brand" href="gotoindex"><img src="/Gizmobuddy/resources/images/logo8.PNG"></img> </a>
+				<a class="navbar-brand" href="<c:url value="#"/>"><img src="/Gizmobuddy/resources/images/logo8.PNG"></img> </a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="gotoindex"><b>Home</b>
+				<li class="active"><a href="/Gizmobuddy/gotoindex"><b>Home</b>
 				</a></li>
 
 
@@ -91,7 +91,7 @@ ul#menu li {
 							Devices</b> <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="<c:url value="/product/productList?productName=Smart Band" />">Smart Band</a></li>
-						<li><a href="<c:url value="/product/productList?productName=Smart Watches" />">Smart Watches</a></li>
+						<li><a href="<c:url value="/product/productList?productName=Smart Watch" />">Smart Watches</a></li>
 
 					</ul></li>
 

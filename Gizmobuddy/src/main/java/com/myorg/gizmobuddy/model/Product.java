@@ -30,9 +30,6 @@ public class Product implements Serializable {
     private String productCondition;
     private String productStatus;
 
-
-    @Min(value = 0, message = "The product unit must not be less then zero")
-    private int unitInStock;
     private String productManufacturer;
 
     @Transient
@@ -99,13 +96,7 @@ public class Product implements Serializable {
         this.productStatus = productStatus;
     }
 
-    public int getUnitInStock() {
-        return unitInStock;
-    }
-
-    public void setUnitInStock(int unitInStock) {
-        this.unitInStock = unitInStock;
-    }
+   
 
     public String getProductManufacturer() {
         return productManufacturer;

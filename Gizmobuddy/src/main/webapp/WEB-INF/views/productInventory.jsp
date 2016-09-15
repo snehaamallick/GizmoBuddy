@@ -42,7 +42,7 @@ $(document).ready(function(){
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} USD </td>
                     <td>
-                        <a href="<spring:url value="/viewProduct/${product.productId}" />"><span class="glyphicon glyphicon-info-sign"></span></a>
+                        
                         <a href="<spring:url value="/admin/product/deleteProduct/${product.productId}" />"><span class="glyphicon glyphicon-remove"></span></a>
                         <a href="<spring:url value="/admin/product/editProduct/${product.productId}" />"><span class="glyphicon glyphicon-pencil"></span></a>
                     </td>

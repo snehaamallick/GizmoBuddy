@@ -24,12 +24,9 @@
 
             <div class="form-group">
                 <label for="category">Category</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="games" />Games</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="consoles" />Consoles</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="accessories" />Accessories</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="top seller" />Top Sellers</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="pre-order" />Pre-Order</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="new releases" />New Releases</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Android" />Android</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Smart Band" />Smart Band</label>
+                <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Smart Watch" />Smart Watch</label>
             </div>
 
             <div class="form-group">
@@ -55,11 +52,6 @@
                 <label class="checkbox-inline"><form:radiobutton path="productStatus" id="status" value="inactive" />Inactive</label>
             </div>
 
-            <div class="form-group"> 
-                <label for="unitInStock">Unit In Stock</label>
-                <form:errors path="unitInStock" cssStyle="color:#ff0000;" />
-                <form:input path="unitInStock" id="unitInStock" class="form-Control" value="${product.unitInStock}"/>
-            </div>
 
             <div class="form-group">
                 <label for="manufacturer">Manufacturer</label>

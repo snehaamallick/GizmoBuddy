@@ -17,6 +17,7 @@ import org.springframework.security.web.authentication.logout.SecurityContextLog
 import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -41,7 +42,7 @@ public class HomeController {
 	 @Autowired
 	    private ProductService productService;
 
-	 @RequestMapping(value={"/","gotoindex"})
+	 @RequestMapping(value={"/","/gotoindex"})
 		public String homePage()
 		{
 			return "home";
@@ -80,6 +81,13 @@ public class HomeController {
         }
 
         return "login";
+    }
+    
+    @RequestMapping(value="/loginError", method = RequestMethod.GET)
+    public String loginError(ModelMap model) {
+    model.addAttribute("error", "Invalid Username or Password!!");
+    return "login";
+     
     }
     
     @RequestMapping(value="/logout", method = RequestMethod.GET)

@@ -252,4 +252,5 @@ ul#menu li {
      </div>
 	
 
+
 	<%@ include file="/WEB-INF/views/template/footer.jsp" %>

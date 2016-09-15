@@ -79,7 +79,7 @@ public class Customer implements Serializable{
     public String getCustomerEmail() {
         return customerEmail;
     }
-
+    
     public void setCustomerEmail(String customerEmail) {
         this.customerEmail = customerEmail;
     }

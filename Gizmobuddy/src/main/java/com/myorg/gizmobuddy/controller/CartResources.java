@@ -58,7 +58,7 @@ public class CartResources {
                 cartItem.setQuantity(cartItem.getQuantity() + 1);
                 cartItem.setTotalPrice(product.getProductPrice()*cartItem.getQuantity());
                 cartItemService.addCartItem(cartItem);
-                //return;
+                return;
             }
         }
 
@@ -94,6 +94,12 @@ public class CartResources {
     @ExceptionHandler(Exception.class)
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Internal Server Error")
     public void handleServerErrors (Exception ex){
+
+    }
+    
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(value = HttpStatus.METHOD_NOT_ALLOWED, reason = "Method not allowed")
+    public void handleErrors (Exception ex){
 
     }
 

@@ -64,6 +64,11 @@ ul#menu li {
     display:inline;
 }
 
+  td
+{
+  padding-top: 5px;
+  padding-bottom: 5px;}
+  
 </style>
 
 <nav class="navbar navbar-inverse">
@@ -96,7 +101,7 @@ ul#menu li {
 							Devices</b> <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="<c:url value="/product/productList?productName=Smart Band" />">Smart Band</a></li>
-						<li><a href="<c:url value="/product/productList?productName=Smart Watches" />">Smart Watches</a></li>
+						<li><a href="<c:url value="/product/productList?productName=Smart Watch" />">Smart Watches</a></li>
 
 					</ul></li>
 
@@ -129,7 +134,7 @@ ul#menu li {
 </div>
 
 <body onload='document.f.username.focus();'>
- <h3>Login with Username and Password</h3>
+<ul> <h3>Login with Username and Password</h3>
  
  <c:if test="${not empty error}">
   <div class="errorblock">
@@ -140,10 +145,10 @@ ul#menu li {
  
  <form name='f' action="perform_login"
   method='POST'>
- 
+ <ul>
   <table>
    <tr>
-    <td>User:</td>
+    <td>Username:</td>
     <td><input type='text' name='username' value=''>
     </td>
    </tr>
@@ -153,19 +158,21 @@ ul#menu li {
     </td>
    </tr>
    <tr>
-    <td colspan='2'><input name="submit" type="submit"
-     value="submit" />
+    <td colspan='3' ><input name="submit" type="submit"
+     value="submit" style="height:30px; width:80px"/>
+    </td>
+    <td colspan='3'><input name="reset" type="reset" style="height:30px; width:80px" />
     </td>
    </tr>
-   <tr>
+   <!--<tr>
     <td colspan='2'><input name="reset" type="reset" />
-    </td>
+    </td>-->
    </tr>
-  </table>
+  </table></ul>
   <input type="hidden" name="${_csrf.parameterName}"
 				value="${_csrf.token}" />
  
- </form>
+ </form></ul>
 </body>
 </html>
 <!--  <div class="container-wrapper">

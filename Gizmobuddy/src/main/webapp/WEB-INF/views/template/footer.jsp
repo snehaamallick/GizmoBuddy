@@ -12,11 +12,11 @@
 					<b>DOWNLOAD THE APP</b>
 				</p>
 				<ul style="list-style-type:none">
-				<li><p align="left"><a href="https://play.google.com/store"><img src="resources/images/Capture.PNG"></img></a></p></li>
+				<li><p align="left"><a href="https://play.google.com/store"><img src="/Gizmobuddy/resources/images/Capture.PNG"></img></a></p></li>
 				<br>
-				<li><p align="left"><a href="https://itunes.apple.com/in/genre/ios/id36?mt=8"><img src="resources/images/appstore.PNG"></img></a></p></li>
+				<li><p align="left"><a href="https://itunes.apple.com/in/genre/ios/id36?mt=8"><img src="/Gizmobuddy/resources/images/appstore.PNG"></img></a></p></li>
 				<br>
-				<li><p align="left"><a href="https://www.microsoft.com/en-in/store/apps"><img src="resources/images/win.PNG"></img></a></p><br></li>
+				<li><p align="left"><a href="https://www.microsoft.com/en-in/store/apps"><img src="/Gizmobuddy/resources/images/win.PNG"></img></a></p><br></li>
 				</ul>
 				
 			</div>
@@ -25,11 +25,11 @@
 			
 				<p align="left"><b>GizmoBuddy</b></p>
 				<ul style="list-style-type:none">
-				<li><a href="Contact">Contact Us</a></li><br>
-				<li><a href="aboutus">About Us</a></li><br>
+				<li><a href="/Gizmobuddy/Contact">Contact Us</a></li><br>
+				<li><a href="/Gizmobuddy/aboutus">About Us</a></li><br>
 				<li><a href="#">Gift Cards</a></li><br>
 				<li><a href="#">Rewards</a></li><br>
-				<li><a href="faq">FAQs</a></li>
+				<li><a href="/Gizmobuddy/faq">FAQs</a></li>
 				<li>Sell on GizmoBuddy</li><br>
 				</ul>
 				

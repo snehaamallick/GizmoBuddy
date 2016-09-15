@@ -50,12 +50,6 @@
             </div>
 
             <div class="form-group">
-                <label for="unitInStock">Unit In Stock</label>
-                <form:errors path="unitInStock" cssStyle="color:#ff0000;" />
-                <form:input path="unitInStock" id="unitInStock" class="form-Control" />
-            </div>
-
-            <div class="form-group">
                 <label for="manufacturer">Manufacturer</label>
                 <form:input path="productManufacturer" id="manufacturer" class="form-Control" />
             </div>

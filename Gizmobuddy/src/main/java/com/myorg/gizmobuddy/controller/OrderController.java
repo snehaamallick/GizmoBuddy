@@ -35,7 +35,7 @@ public class OrderController {
         Customer customer = cart.getCustomer();
         customerOrder.setCustomer(customer);
         customerOrder.setBillingAddress(customer.getBillingAddress());
-        customer.setShippingAddress(customer.getShippingAddress());
+        customerOrder.setShippingAddress(customer.getShippingAddress());
 
         customerOrderService.addCustomerOrder(customerOrder);
 

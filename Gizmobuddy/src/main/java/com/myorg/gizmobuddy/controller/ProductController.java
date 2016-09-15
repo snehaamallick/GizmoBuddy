@@ -54,7 +54,7 @@ public class ProductController {
     }*/
     
     @RequestMapping("/productList")
-    public String loadStudentDetailsPage(Model model)
+    public String loadProductDetailsPage(Model model)
     {
     	List<Product> products = productService.getProductList();
         model.addAttribute("products", products);

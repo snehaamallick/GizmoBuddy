@@ -34,25 +34,15 @@
                     </c:if>
 
                     <p ng-controller="cartCtrl">
-                        <a href="<c:url value = "/productList" />" class="btn btn-default">Back</a>
+                        <a href="<c:url value = "/product/productList" />" class="btn btn-default">Back</a>
                        <!--<a href="/add/${productId}" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>-->
                         
-                       <a href="<c:url value ="/rest/cart/add/${product.productId}"/>"  class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>
+                       <a href="<c:url value ="/customer/cart"/>"  class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>
                         <a href="<spring:url value="/customer/cart" />" class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span> View Cart</a>
                    <a href="#myModal" role="button" data-toggle="modal" class = "btn btn-default">Share with a Friend</a>
                    <!--<a href="/rest/cart/${cart.cartId}" class="btn btn-warning btn-large"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>-->
                     </p>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
+           
                 </div>
             </div>
         </div>

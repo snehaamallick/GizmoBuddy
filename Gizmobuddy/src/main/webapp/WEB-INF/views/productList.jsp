@@ -34,7 +34,7 @@
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
-                    <td>${product.productPrice} USD </td>
+                    <td>${product.productPrice} INR </td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"  
 					class="btn btn-primary"> <span
 					class="glyphicon-info-sign glyphicon"> </span> Details
@@ -61,11 +61,11 @@
 					<b>DOWNLOAD THE APP</b>
 				</p>
 				<ul style="list-style-type:none">
-				<li><p align="left"><a href="#"><img src="/Gizmobuddy/resources/images/Capture.PNG"></img></a></p></li>
+				<li><p align="left"><a href="https://play.google.com/store"><img src="/Gizmobuddy/resources/images/Capture.PNG"></img></a></p></li>
 				<br>
-				<li><p align="left"><a href="#"><img src="/Gizmobuddy/resources/images/appstore.PNG"></img></a></p></li>
+				<li><p align="left"><a href="https://itunes.apple.com/in/genre/ios/id36?mt=8"><img src="/Gizmobuddy/resources/images/appstore.PNG"></img></a></p></li>
 				<br>
-				<li><p align="left"><a href="#"><img src="/Gizmobuddy/resources/images/win.PNG"></img></a></p><br></li>
+				<li><p align="left"><a href="https://www.microsoft.com/en-in/store/apps"><img src="/Gizmobuddy/resources/images/win.PNG"></img></a></p><br></li>
 				</ul>
 				
 			</div>
@@ -78,7 +78,7 @@
 				<li><a href="/Gizmobuddy/aboutus">About Us</a></li><br>
 				<li><a href="#">Gift Cards</a></li><br>
 				<li><a href="#">Rewards</a></li><br>
-				<li><a href="faq">FAQs</a></li>
+				<li><a href="/Gizmobuddy/faq">FAQs</a></li>
 				<li>Sell on GizmoBuddy</li><br>
 				</ul>
 				
