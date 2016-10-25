@@ -1,0 +1,41 @@
+package com.myorg.gizmobuddy.controller;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.myorg.gizmobuddy.model.Customer;
+import com.myorg.gizmobuddy.service.CustomerService;
+
+
+@Controller
+@RequestMapping("/customer/cart")
+public class CartController {
+	Logger log = LoggerFactory.getLogger(CartController.class);
+
+    @Autowired
+    private CustomerService customerService;
+
+    @RequestMapping
+    public String getCart(@AuthenticationPrincipal User activeUser){
+        Customer customer = customerService.getCustomerByUsername(activeUser.getUsername());
+        int cartId = customer.getCart().getCartId();
+
+        return "redirect:/customer/cart/" + cartId;
+    }
+
+    @RequestMapping("/{cartId}")
+    public String getCartRedirect(@PathVariable (value = "cartId") int cartId, Model model){
+        model.addAttribute("cartId", cartId);
+
+        return "cart";
+    }
+
+} // The End of Class;
